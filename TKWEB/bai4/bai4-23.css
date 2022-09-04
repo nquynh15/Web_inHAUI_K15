@@ -1,0 +1,35 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 600px;
+  background-color: blue;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+ li{
+  display: inline-block;
+  margin: 0;
+  padding: 20px;
+}
+.menu1 ul li{
+  position: relative;
+}
+.menu2{
+  display: none;
+  background-color: red;
+  padding: 0;
+  width: 400px;
+}
+.menu1 ul li:hover{
+  background-color: red;
+}
+
+.menu1 ul li:hover .menu2{
+  display: block;
+  position: absolute;
+
+}

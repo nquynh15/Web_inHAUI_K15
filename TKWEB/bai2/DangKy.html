@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+  <table bgcolor="lightgreen" border="1px solid" height="300px" width="600px" style="border-collapse: collapse;">
+    <tr>
+      <td>Họ và tên</td>
+      <td>
+        <input type="text" size="55">
+      </td>
+    </tr>
+    <tr>
+      <td>Địa chỉ</td>
+      <td>
+        <input type="text"  size="45">
+      </td>
+    </tr>
+    <tr>
+      <td>Điện thoại</td>
+      <td><input type="text"  size="38" pattern="[0-9]{10}"></td>
+    </tr>
+    <tr>
+      <td>Phái</td>
+      <td>
+        <input type="radio" value="nam"> Nam
+        <input type="radio" value="nu"> Nữ
+      </td>
+    </tr>
+    <tr>
+      <td>Nghề nghiệp</td>
+      <td>
+        <select name="career" id="career">
+          <option value="gv">Giáo viên</option>
+          <option value="qn">Quân nhân</option>
+          <option value="ks">Kĩ sư</option>
+          <option value="bs">Bác sĩ</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Chọn sản phẩm tham gia</td>
+      <td>
+        <select multiple >
+          <option value="1">Kem đánh răng</option>
+          <option value="2">Bột giặt</option>
+          <option value="3">Dầu gội đầu</option>
+          <option value="4">Sữa tắm</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Số người dự đoán tham gia</td>
+      <td> <input type="text"> </td>
+    </tr>
+    <tr align="center">
+      <td colspan="2"><button>Đồng ý</button> </td>
+    </tr>
+  </table>
+</body>
+</html>

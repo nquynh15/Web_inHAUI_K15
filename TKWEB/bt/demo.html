@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //let a = 1;
+    //alert(a || 2 || 3 || null)
+    /*function getRandNumbers(min, max, length) {
+      var a = [];
+      for (var i = 0; i < length; i++) {
+        a.splice(i, 0, Math.floor(Math.random() * (max - (min - 1)) + min));
+      }
+      return a;
+    }    console.log(getRandNumbers(5, 15, 8))*/
+    const sports = [
+    {
+        name: 'Bóng rổ',
+        like: 6
+    },
+    {
+        name: 'Bơi lội',
+        like: 5
+    },
+    {
+        name: 'Bóng đá',
+        like: 10
+    },
+]
+    function getMostFavoriteSport(array){
+        var arr=[];
+        var listFavoriteSport = array.filter(function(result){
+            if (result.like > 5)
+                arr.push(result);
+        });
+        return arr;
+    }
+
+    console.log(getMostFavoriteSport(sports))
+
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+body{
+  margin: 0;
+}
+h1, h2, h3,h4, h5, h6, ul, li{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  max-width: 1650px;
+  margin: auto;
+}
+header{
+  margin-bottom: 30px;
+}
+#banner{
+  background-image: url('https://img.freepik.com/premium-vector/modern-wave-blue-abstract-banner-design-background-blue-banner-background-geometric-blue-light-stripes-texture-background_181182-28865.jpg');
+  background-size: cover;
+}
+#banner .container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#banner .container h1{
+  font-size: 35px;
+  color: #0033CC;
+}
+#banner .container p{
+  font-size: 20px;
+  color: black;
+}
+#nav{
+  background-color: #33CCFF;
+  height: 50px;
+  width: 100%;
+}
+#nav ul li{
+  display: inline;
+  padding: 4px 0;;
+}
+#nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#nav ul li a{
+  color: white;
+  font-size: 20px;
+}
+#nav ul li a:hover{
+  color: yellow;
+}
+section .container{
+  display: flex;
+  justify-content: space-between;
+}
+.menu{
+  width: 300px;
+  position: relative;
+}
+
+.menu ul li{
+  background-color: #33FFFF;
+  padding: 10px;
+
+}
+.menu ul li a{
+  color: white;
+}
+.submenu{
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 200px;
+  width: 200px;
+}
+.item:hover .submenu{
+  display: block;
+}
+.content{
+  width: 1300px;
+}
+.firstrow{
+  padding: 10px 0;
+  border-bottom: 2px solid blue;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.main_content{
+  display: flex;
+}
+.image-menu{
+  width: 600px;
+}
+table tr td img:hover{
+  transform: scale(1.2);
+}
+table tr td a:hover{
+  background-color: green;
+  padding: 5px;
+  color: black;
+}
+
+

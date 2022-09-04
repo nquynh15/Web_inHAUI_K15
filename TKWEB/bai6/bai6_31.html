@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giải hệ phương trình</title>
+</head>
+<body>
+  <p id="show1"></p>
+  <p id="show2"></p>
+  <button onclick="Tinh()">Kết quả</button> <br>
+  <span>This is the result: </span>
+  <span id="demo"></span>
+  <script>
+    confirm("Nhập vào hệ số của hệ phương trình:");
+    let a = prompt("a = ");
+    let b = prompt("b = ");
+    let c = prompt("c = ");
+    let d = prompt("d = ");
+    let e = prompt("e = ");
+    let f = prompt("f = ");
+    document.getElementById("show1").innerHTML = (a+"x + "+b+"y = "+ c);
+    document.getElementById("show2").innerHTML = (d+"x + "+e+"y = "+ f);
+    var D = a * e - b * d;
+    var Dx = c * e - b * f;
+    var Dy = a * f - c * d;
+
+    var txt = "";
+    if(D == 0){
+        if(Dx + Dy == 0)
+            txt = "Hệ phương trình có vô số nghiệm";
+        else
+            txt = "Hệ phương trình vô nghiệm";
+    }else{
+        var x = Dx / D;
+        var y = Dy / D;
+        txt = "<br>x = " + x + "<br>y = " + y;
+    }
+    function Tinh(){
+      document.getElementById("demo").innerHTML = txt;
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tính tiền điện</title>
+  <style>
+    .container{
+      width: 400px;
+      margin: auto;
+    }
+    .form_input{
+      display: flex;
+      justify-content: space-between;
+      margin: 7px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>THANH TOÁN TIỀN ĐIỆN</h1>
+    <form action="">
+      <div class="form_input">
+        <label for="" >Tên chủ hộ</label>
+        <input type="text" id="name">
+        <p id="nameError"></p>
+      </div>
+      <div class="form_input">
+        <label for="">Chỉ số cũ</label>
+        <input type="text" id="oldNumber">
+        <p id="oldNumberError"></p>
+      </div>
+
+      <div class="form_input">
+        <label for="">Chỉ số mới</label>
+        <input type="text" id="newNumber">
+        <p id="newNumberError"></p>
+      </div>
+
+      <div class="form_input">
+        <label for="">Đơn giá</label>
+        <input type="text" id="unitPrice">
+        <p id="unitPriceError"></p>
+      </div>
+
+      <div class="form_input">
+        <label for="">Số tiền cần thanh toán</label>
+        <input type="text" id="totalPrice">
+      </div>
+      <div>
+        <button type="submit" onclick="myFunc()">Tính</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+
+  </script>
+</body>
+</html>

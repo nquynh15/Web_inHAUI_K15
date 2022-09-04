@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu2</title>
+    <style>
+        * {margin: 0; padding: 0; outline: none;}
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-image: url("bg3.jpg");
+            background-position: center;
+            background-size: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        span {
+            display: block;
+            color: red;
+            font-size: 30px;
+            background-color: blue;
+            border-radius: 5px;
+        }
+        input {
+            padding: 7px;
+            border-radius: 5px;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="inputData" oninput="myF()" placeholder="Hãy nhập số x" /> <span id="res"></span>
+    </div>
+
+    <script>
+        function myF() {
+            let x = parseInt(document.getElementById("inputData").value);
+            let s = 0;
+            for (let i = 1; i <= x; i++) {
+              if (i % 6 === 0) {
+                s += i;
+              }
+            }
+            document.getElementById("res").innerHTML = s;
+          }
+    </script>
+</body>
+</html>

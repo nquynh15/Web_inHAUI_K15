@@ -1,0 +1,68 @@
+body{
+  margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p, ul, li{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+#header{
+  background-image: url('https://img.freepik.com/premium-vector/modern-wave-blue-abstract-banner-design-background-blue-banner-background-geometric-blue-light-stripes-texture-background_181182-28865.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+#logo{
+  width: 20%;
+}
+#banner{
+  height: 100px;
+  width: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#banner h1{
+  font-size: 40px;
+  color: #0033CC;
+}
+#banner p{
+  font-size: 20px;
+  color: black;
+}
+nav{
+  background-color: #33CCFF;
+}
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li{
+  font-size: 30px;
+  display: inline;
+  padding: 5px;
+}
+nav ul li a{
+  color: white;
+}
+
+nav ul li input{
+  width: 90%;
+  padding: 6px;
+  border: none;
+  font-size: 17px;
+}
+section{
+  display: flex;
+}
+#menu{
+  width: 30%;
+  font-size: 28px;
+}
+#content{
+  width: 70%;
+}

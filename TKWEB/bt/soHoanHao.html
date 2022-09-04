@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Số hoàn hảo</title>
+</head>
+<body>
+  <div>
+    <table>
+      <caption>SỐ HOÀN HẢO</caption>
+      <tr>
+        <td>Nhập n = </td>
+        <td><input type="text" id="number"></td>
+      </tr>
+      <tr>
+        <td>Tổng các số hoàn hảo trong dãy: </td>
+        <td>
+          <p id="result"></p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button type="submit"  onclick="check()">Tính tổng</button>
+          <button type="reset">Hủy bỏ</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+    function perfectNumber(n){
+      let s=0;
+      for(let i=1; i<n; i++){
+        if(n%i==0){
+          s+=i;
+        }
+      }
+      if(s == n){
+        return true;
+      }
+      else {
+        return false;
+      }
+    }
+    function check(){
+      let number=document.getElementById("number").value;
+      console.log(number);
+      let d=0, sum =1;
+      for(let i=2; i<=number; i++){
+        if(perfectNumber(i)){
+          d++;
+        }
+      }
+      if(d==0){
+        document.getElementById("result").innerHTML = 1;
+      }
+      else{
+        for(let i=1; i<=number; i++){
+          if(perfectNumber(i)){
+            sum +=i;
+          }
+        }
+        document.getElementById("result").innerHTML = sum;
+      }
+
+
+    }
+  </script>
+</body>
+</html>

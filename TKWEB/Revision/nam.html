@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiểm tra ngày tháng năm</title>
+  <style>
+    div{
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <label >Tháng: </label>
+    <input type="text" id="month">
+    <label >Năm: </label>
+    <input type="text" id="year">
+  </div>
+  <div>
+    <label for="">Số ngày</label>
+    <input id="result">
+  </div>
+  <div>
+    <button type="submit" onclick="check()">Hiện số ngày của tháng</button>
+  </div>
+
+
+  <script>
+    function check(){
+      let m = parseInt(document.getElementById("month").value);
+      let y = parseInt(document.getElementById("year").value);
+
+      if(y %4 == 0 & y%100 != 100 || y%400 == 0){
+        switch(m)
+        {
+          case 2 :
+            document.getElementById("result").value = 29; break;
+          case 1: case 3: case 5: case 7 : case 8 : case 10 : case 12:
+            document.getElementById("result").value = 30; break;
+          default:
+            document.getElementById("result").value =31; break;
+        }
+      }
+      else{
+        switch(m)
+        {
+          case 2 : document.getElementById("result").value = 28; break;
+          case 1: case 3: case 5: case 7 : case 8 : case 10 : case 12:
+            document.getElementById("result").value = 30; break;
+          default:
+            document.getElementById("result").value = 31; break;
+        }
+      }
+    }
+  </script>
+</body>
+</html>

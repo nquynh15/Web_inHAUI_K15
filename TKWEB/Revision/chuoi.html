@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiểm tra chuỗi</title>
+</head>
+<body>
+
+    <table>
+      <tr>
+        <td><p>Nhap chuoi</p></td>
+        <td>
+          <input type="text" name="" id="string">
+        </td>
+      </tr>
+      <tr>
+        <td><p>Nhap tu</p></td>
+        <td>
+          <input type="text" name="" id="word">
+        </td>
+      </tr>
+      <tr>
+        <td><p>Thong bao</p></td>
+        <td>
+          <input type="text" id="result">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button type="submit" onclick="show()">Kiem tra</button>
+          <button type="reset">Huy bo</button>
+        </td>
+      </tr>
+    </table>
+
+  <script>
+    function show(){
+      let str1 = document.getElementById("string").value;
+      let arr = str1.split(" ")
+      let str2 = document.getElementById("word").value;
+      let c=0;
+
+      for(let i=0; i<arr.length; i++){
+        if(arr[i] == str2 ){
+          c++;
+        }
+      }
+      document.getElementById("result").value = c;
+    }
+  </script>
+</body>
+</html>
